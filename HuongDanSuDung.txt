@@ -1,0 +1,5 @@
+- Cơ sở dữ liệu lên dùng sql 2019
+- Sau khi mở file lên tạo kết nối sql + bài
+- tài khoản:
+	+ admin admin
+- khi tạo hoặc đặt lại mật khẩu thì mật khẩu mặc định là 0

@@ -1,0 +1,384 @@
+MZ       ÿÿ  ¸       @                                   °   º ´	Í!¸LÍ!This program cannot be run in DOS mode. $       ù-TÙ½L:Š½L:Š½L:ŠšŠFŠ¼L:ŠšŠBŠ¼L:ŠRich½L:Š        PE  d† ƒy¶K        ð " 
+      B               ìS                     `     Å‚   @                                                      ¸A           D  `                                                                                          .rsrc   ¸A      B                 @  @                                                     €   h  €                  €  €   ˜  €   °  €   È  €   à  €   ø  €    €                  ( €               	  @                 	  P                 	  `                 	  p                 	  €                 	                   	                    	  °  ¸  Œ          (.  h          °B  ´          ðJ  Â          H'  à          4            hJ  „           À  ø          ø4   V S _ V E R S I O N _ I N F O     ½ïþ   d Ù @2 
+  @?                        V   S t r i n g F i l e I n f o   2   0 4 0 9 0 4 B 0   &   P l a t f o r m   N T   x 6 4     º I  L e g a l T r a d e m a r k s     M i c r o s o f t   S Q L   S e r v e r   i s   a   r e g i s t e r e d   t r a d e m a r k   o f   M i c r o s o f t   C o r p o r a t i o n .         C o m m e n t s   S Q L   &   G o l d e n B i t s   T r u e     L   C o m p a n y N a m e     M i c r o s o f t   C o r p o r a t i o n   œ :  F i l e D e s c r i p t i o n     T - S Q L   e x e c u t i o n   c o m m a n d   l i n e   u t i l i t y   l i b r a r y   r e s o u r c e   D L L   t *  F i l e V e r s i o n     2 0 0 9 . 0 1 0 0 . 1 6 0 0 . 0 1   ( ( K J _ R T M ) . 1 0 0 4 0 2 - 1 5 3 9   )   D   I n t e r n a l N a m e   S Q L C M D _ C O M P O N E N T S   n %  L e g a l C o p y r i g h t   M i c r o s o f t   C o r p .   A l l   r i g h t s   r e s e r v e d .     T   O r i g i n a l F i l e n a m e   S Q L C M D _ C O M P O N E N T S . R L L   J   P r o d u c t N a m e     M i c r o s o f t   S Q L   S e r v e r     > 
+  P r o d u c t V e r s i o n   1 0 . 5 0 . 1 6 0 0 . 1     D    V a r F i l e I n f o     $    T r a n s l a t i o n     	°  Òu s a g e :   S q l c m d                         [ - U   l o g i n   i d ]                     [ - P   p a s s w o r d ] 
+ 
+     [ - S   s e r v e r ]                         [ - H   h o s t n a m e ]                     [ - E   t r u s t e d   c o n n e c t i o n ] 
+ 
+     [ - N   E n c r y p t   C o n n e c t i o n ] [ - C   T r u s t   S e r v e r   C e r t i f i c a t e ] 
+ 
+     [ - d   u s e   d a t a b a s e   n a m e ]   [ - l   l o g i n   t i m e o u t ]           [ - t   q u e r y   t i m e o u t ] 
+ 
+     [ - h   h e a d e r s ]                       [ - s   c o l s e p a r a t o r ]             [ - w   s c r e e n   w i d t h ] 
+ 
+     [ - a   p a c k e t s i z e ]                 [ - e   e c h o   i n p u t ]                 [ - I   E n a b l e   Q u o t e d   I d e n t i f i e r s ] 
+ 
+     [ - c   c m d e n d ]                         [ - L [ c ]   l i s t   s e r v e r s [ c l e a n   o u t p u t ] ] 
+ 
+     [ - q   " c m d l i n e   q u e r y " ]       [ - Q   " c m d l i n e   q u e r y "   a n d   e x i t ] 
+ 
+     [ - m   e r r o r l e v e l ]                 [ - V   s e v e r i t y l e v e l ]           [ - W   r e m o v e   t r a i l i n g   s p a c e s ] 
+ 
+     [ - u   u n i c o d e   o u t p u t ]         [ - r [ 0 | 1 ]   m s g s   t o   s t d e r r ] 
+ 
+     [ - i   i n p u t f i l e ]                   [ - o   o u t p u t f i l e ]                 [ - z   n e w   p a s s w o r d ] 
+ 
+     [ - f   < c o d e p a g e >   |   i : < c o d e p a g e > [ , o : < c o d e p a g e > ] ]   [ - Z   n e w   p a s s w o r d   a n d   e x i t ] 
+ 
+     [ - k [ 1 | 2 ]   r e m o v e [ r e p l a c e ]   c o n t r o l   c h a r a c t e r s ] 
+ 
+     [ - y   v a r i a b l e   l e n g t h   t y p e   d i s p l a y   w i d t h ] 
+ 
+     [ - Y   f i x e d   l e n g t h   t y p e   d i s p l a y   w i d t h ] 
+ 
+     [ - p [ 1 ]   p r i n t   s t a t i s t i c s [ c o l o n   f o r m a t ] ] 
+ 
+     [ - R   u s e   c l i e n t   r e g i o n a l   s e t t i n g ] 
+ 
+     [ - b   O n   e r r o r   b a t c h   a b o r t ] 
+ 
+     [ - v   v a r   =   " v a l u e " . . . ]     [ - A   d e d i c a t e d   a d m i n   c o n n e c t i o n ] 
+ 
+     [ - X [ 1 ]   d i s a b l e   c o m m a n d s ,   s t a r t u p   s c r i p t ,   e n v i r o m e n t   v a r i a b l e s   [ a n d   e x i t ] ] 
+ 
+     [ - x   d i s a b l e   v a r i a b l e   s u b s t i t u t i o n ] 
+ 
+     [ - ?   s h o w   s y n t a x   s u m m a r y ] 
+ 
+ 7 S q l c m d :   ' % 1 ! s ! ' :   U n k n o w n   O p t i o n .   E n t e r   ' - ? '   f o r   h e l p . 
+ 
+ : S q l c m d :   ' - % 1 ! s ! ' :   M i s s i n g   a r g u m e n t .   E n t e r   ' - ? '   f o r   h e l p . 
+ 
+ < S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   E n t e r   ' - ? '   f o r   h e l p . 
+ 
+ J S q l c m d :   ' % 1 ! s !   % 2 ! s ! ' :   % 3 ! s !   h a s   t o   b e   a   n u m b e r   b e t w e e n   % 4 ! d !   a n d   % 5 ! d ! . 
+ 
+ T S q l c m d :   T h e   - % 1 ! s !   p a r a m e t e r   c a n   n o t   b e   u s e d   i n   c o m b i n a t i o n   w i t h   o t h e r   p a r a m e t e r s . 
+ 
+ A S q l c m d :   T h e   % 1 ! s !   a n d   t h e   % 2 ! s !   o p t i o n s   a r e   m u t u a l l y   e x c l u s i v e . 
+ 
+ 3 S q l c m d :   C o m m a n d   % 1 ! s ! :   I n v a l i d   P a r a m e t e r s   p a s s e d . 
+ 
+ * S y n t a x   E r r o r   i n   s c r i p t   o r   b a t c h   e x e c u t i o n . ( S q l c m d :   R e q u e s t   f o r   A p p l i c a t i o n   t o   e x i t . W S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   A r g u m e n t   h a s   t o   b e   a   n u m b e r   g r e a t e r   t h a n   % 2 ! d ! . 
+ 
+ G S q l c m d :   ' - w   % 1 ! s ! ' :   v a l u e   m u s t   b e   g r e a t e r   t h a n   8   a n d   l e s s   t h a n   6 5 5 3 6 . 
+ 
+ D S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   A r g u m e n t   h a s   t o   b e   a   n u m b e r . 
+ 
+ M S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   A r g u m e n t   v a l u e   h a s   t o   b e   z e r o   o r   o n e . 
+ 
+ $ S q l c m d :   ' % 1 ! s ! ' :   I n v a l i d   f i l e n a m e . 
+ 
+     
+ P a s s w o r d :    M i c r o s o f t   ( R )   S Q L   S e r v e r   C o m m a n d   L i n e   T o o l 
+ 
+ V e r s i o n   % 1 ! s !   % 2 ! s ! 
+ 
+ C o p y r i g h t   ( c )   M i c r o s o f t   C o r p o r a t i o n .     A l l   r i g h t s   r e s e r v e d . 
+ 
+ 
+ 
+     3 S q l c m d :   S u c c e s s f u l l y   c o n n e c t e d   t o   s e r v e r   ' % 1 ! s ! ' . 
+ 
+ ! S q l c m d :   E r r o r :   S c r i p t i n g   e r r o r . 
+ 
+ 6 S q l c m d :   E r r o r :   U n e x p e c t e d   e n d   o f   s c r i p t   e n c o u n t e r e d . 
+ 
+ K S q l c m d :   E r r o r :   U n e x p e c t e d   e n d   o f   s c r i p t   e n c o u n t e r e d   n e a r   c o m m a n d   ' % 1 ! s ! ' . 
+ 
+ , S q l c m d :   E r r o r :   S y n t a x   e r r o r   a t   l i n e   % 1 ! d ! . 
+ 
+ A S q l c m d :   E r r o r :   S y n t a x   e r r o r   a t   l i n e   % 1 ! d !   n e a r   c o m m a n d   ' % 2 ! s ! ' . 
+ 
+ F S q l c m d :   E r r o r :   U n e x p e c t e d   e n d   o f   s c r i p t   e n c o u n t e r e d   i n   f i l e   ' % 1 ! s ! ' . 
+ 
+ [ S q l c m d :   E r r o r :   U n e x p e c t e d   e n d   o f   s c r i p t   e n c o u n t e r e d   n e a r   c o m m a n d   ' % 1 ! s ! '   i n   f i l e   ' % 2 ! s ! ' . 
+ 
+ < S q l c m d :   E r r o r :   S y n t a x   e r r o r   a t   l i n e   % 1 ! d !   i n   f i l e   ' % 2 ! s ! ' . 
+ 
+ Q S q l c m d :   E r r o r :   S y n t a x   e r r o r   a t   l i n e   % 1 ! d !   n e a r   c o m m a n d   ' % 2 ! s ! '   i n   f i l e   ' % 3 ! s ! ' . 
+ 
+ g S q l c m d :   ' - % 1 ! s !   % 2 ! s ! ' :   v a l u e   m u s t   b e   g r e a t e r   t h a n   o r   e q u a l   t o   % 3 ! d !   a n d   l e s s   t h a n   o r   e q u a l   t o   % 4 ! d ! . 
+ 
+   E S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   A r g u m e n t   v a l u e   h a s   t o   b e   o n e . 
+ 
+ A S q l c m d :   W a r n i n g :   ' - % 1 ! s ! '   i s   a n   o b s o l e t e   o p t i o n   a n d   i s   i g n o r e d . 
+ 
+   I n p u t   f i l e   ' % 1 ! s ! '     n o t   f o u n d . 
+ 
+ ) ' % 1 ! s ! '   s c r i p t i n g   v a r i a b l e   n o t   d e f i n e d . 
+ 
+ d S q l c m d :   E r r o r :   E D   a n d   ! ! < c o m m a n d >   c o m m a n d s ,   s t a r t u p   s c r i p t ,   a n d   e n v i r o m e n t   v a r i a b l e s   a r e   d i s a b l e d . 
+ 
+ ^ T h e   b a t c h   t e r m i n a t o r   c a n n o t   b e   a   T r a n s a c t - S Q L   r e s e r v e d   k e y w o r d   o r   p r o v i d e r - s p e c i f i c   k e y w o r d . 
+ 
+ U T h e   b a t c h   t e r m i n a t o r   c a n n o t   b e   a   S Q L   r e s e r v e d   k e y w o r d   o r   p r o v i d e r   s p e c i f i c   k e y w o r d . 
+ 
+ 7 S q l c m d :   ' % 1 ! s ! ' :   I n v a l i d   a r g u m e n t .   E n t e r   ' - ? '   f o r   h e l p . 8 S q l c m d :   E r r o r :   I n i t i a l i z a t i o n   F i l e   ' % 1 ! s ! '     n o t   f o u n d . 
+ 
+ $ F i l e   ' % 1 ! s ! '   r e c u r s i v e l y   i n c l u d e d . 
+ 
+ 9 S q l c m d :   E r r o r :   I n t e r n a l   e r r o r   a t   % 1 ! s !   ( R e a s o n :   % 2 ! s ! ) . 
+ 
+ Y S q l c m d :   E r r o r :   E r r o r   o c c u r r e d   w h i l e   o p e n i n g   o r   o p e r a t i n g   o n   f i l e   % 1 ! s !   ( R e a s o n :   % 2 ! s ! ) . 
+ 
+    S q l c m d :   I n t e r n a l   E r r o r . 
+ 
+     H S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   A r g u m e n t   v a l u e   h a s   t o   b e   1   o r   2 . 
+ 
+         ä: ! !   [ < c o m m a n d > ] 
+     -   E x e c u t e s   a   c o m m a n d   i n   t h e   W i n d o w s   c o m m a n d   s h e l l . 
+ : c o n n e c t   s e r v e r [ \ i n s t a n c e ]   [ - l   t i m e o u t ]   [ - U   u s e r   [ - P   p a s s w o r d ] ] 
+     -   C o n n e c t s   t o   a   S Q L   S e r v e r   i n s t a n c e . 
+ : e d 
+     -   E d i t s   t h e   c u r r e n t   o r   l a s t   e x e c u t e d   s t a t e m e n t   c a c h e . 
+ : e r r o r   < d e s t > 
+     -   R e d i r e c t s   e r r o r   o u t p u t   t o   a   f i l e ,   s t d e r r ,   o r   s t d o u t . 
+ : e x i t 
+     -   Q u i t s   s q l c m d   i m m e d i a t e l y . 
+ : e x i t ( ) 
+     -   E x e c u t e   s t a t e m e n t   c a c h e ;   q u i t   w i t h   n o   r e t u r n   v a l u e . 
+ : e x i t ( < q u e r y > ) 
+     -   E x e c u t e   t h e   s p e c i f i e d   q u e r y ;   r e t u r n s   n u m e r i c   r e s u l t . 
+ g o   [ < n > ] 
+     -   E x e c u t e s   t h e   s t a t e m e n t   c a c h e   ( n   t i m e s ) . 
+ : h e l p 
+     -   S h o w s   t h i s   l i s t   o f   c o m m a n d s . 
+ : l i s t 
+     -   P r i n t s   t h e   c o n t e n t   o f   t h e   s t a t e m e n t   c a c h e . 
+ : l i s t v a r 
+     -   L i s t s   t h e   s e t   s q l c m d   s c r i p t i n g   v a r i a b l e s . 
+ : o n   e r r o r   [ e x i t | i g n o r e ] 
+     -   A c t i o n   f o r   b a t c h   o r   s q l c m d   c o m m a n d   e r r o r s . 
+ : o u t   < f i l e n a m e > | s t d e r r | s t d o u t 
+     -   R e d i r e c t s   q u e r y   o u t p u t   t o   a   f i l e ,   s t d e r r ,   o r   s t d o u t . 
+ : p e r f t r a c e   < f i l e n a m e > | s t d e r r | s t d o u t 
+     -   R e d i r e c t s   t i m i n g   o u t p u t   t o   a   f i l e ,   s t d e r r ,   o r   s t d o u t . 
+ : q u i t 
+     -   Q u i t s   s q l c m d   i m m e d i a t e l y . 
+ : r   < f i l e n a m e > 
+     -   A p p e n d   f i l e   c o n t e n t s   t o   t h e   s t a t e m e n t   c a c h e . 
+ : r e s e t 
+     -   D i s c a r d s   t h e   s t a t e m e n t   c a c h e . 
+ : s e r v e r l i s t 
+     -   L i s t s   l o c a l   a n d   S Q L   S e r v e r s   o n   t h e   n e t w o r k . 
+ : s e t v a r   { v a r i a b l e } 
+     -   R e m o v e s   a   s q l c m d   s c r i p t i n g   v a r i a b l e . 
+ : s e t v a r   < v a r i a b l e >   < v a l u e > 
+     -   S e t s   a   s q l c m d   s c r i p t i n g   v a r i a b l e . 
+  E n t e r   n e w   p a s s w o r d :    
+ 
+ E n t e r   n e w   p a s s w o r d   a g a i n :   $ R e - e n t e r e d   p a s s w o r d   d o e s   n o t   m a t c h 
+ 
+  T i m e o u t   e x p i r e d 
+ 
+ $ C a n c e l i n g   c o n n e c t i o n .   P l e a s e   w a i t . . . < S q l c m d :   O p t i o n   ' % 1 ! s ! '   c a n n o t   b e   s p e c i f i e d   m u l t i p l e   t i m e s . 
+ 
+ y S q l c m d :   E r r o r :   C o n n e c t i o n   f a i l u r e .   S Q L   N a t i v e   C l i e n t   i s   n o t   i n s t a l l e d   c o r r e c t l y .   T o   c o r r e c t   t h i s ,   r u n   S Q L   S e r v e r   S e t u p . 
+ 
+ U S q l c m d :   E r r o r :   C o n n e c t i o n   f a i l u r e .   O n e   o r   m o r e   c o n n e c t i o n   p r o p e r t i e s   a r e   i n c o r r e c t . 
+ 
+ ? E r r o r   I n t i a i l i z i n g   C O M   .   C o I n i t i a l i z e   f a i l e d   w i t h   H r e s u l t :   0 x % X       W M s g   % 1 ! d ! ,   L e v e l   % 2 ! d ! ,   S t a t e   % 3 ! d ! ,   S e r v e r   % 4 ! s ! ,   P r o c e d u r e   % 5 ! s ! ,   L i n e   % 6 ! d ! 
+ 
+ % 7 ! s ! 
+ 
+  c a n ' t   c o n v e r t   v a l u e  U n k n o w n  
+ 
+ S e r v e r s : 
+ 
+ } 
+ 
+ N e t w o r k   p a c k e t   s i z e   ( b y t e s ) :   % 1 ! s ! 
+ 
+ % 2 ! d !   x a c t [ s ] : 
+ 
+ C l o c k   T i m e   ( m s . ) :   t o t a l       % 3 ! 7 l d !     a v g       % 4 ! s !   ( % 5 ! s !   x a c t s   p e r   s e c . ) 
+ 
+ F M s g   % 1 ! d ! ,   L e v e l   % 2 ! d ! ,   S t a t e   % 3 ! d ! ,   S e r v e r   % 4 ! s ! ,   L i n e   % 5 ! d ! 
+ 
+ % 6 ! s ! 
+ 
+  S Q L C M D c S q l c m d :   E r r o r :   T h e   s c r i p t i n g   v a r i a b l e :   ' % 1 ! s ! '   s e t   w i t h   t h e   - v   o p t i o n   h a s   i n v a l i d   v a l u e :   ' % 2 ! s ! ' . 
+ 
+   N S q l c m d :   E r r o r :   T h e   e n v i r o n m e n t   v a r i a b l e :   ' % 1 ! s ! '   h a s   i n v a l i d   v a l u e :   ' % 2 ! s ! ' . 
+ 
+ l S q l c m d :   E r r o r :   T h e   s c r i p t i n g   v a r i a b l e   ' % 1 ! s ! ' ,   s e t   w i t h   t h e   s e t v a r   c o m m a n d ,   h a s   a n   i n v a l i d   v a l u e :   ' % 2 ! s ! ' . 
+ 
+ > S q l c m d :   E r r o r :   T h e   s c r i p t i n g   v a r i a b l e :   ' % 1 ! s ! '   i s   r e a d - o n l y . 
+ 
+ 4 S q l c m d :   E r r o r :   N o   s c r i p t i n g   v a r i a b l e   i s   s p e c i f i e d . 
+ 
+ W 
+ 
+ S q l c m d :   W a r n i n g :   T h e   l a s t   o p e r a t i o n   w a s   t e r m i n a t e d   b e c a u s e   t h e   u s e r   p r e s s e d   C T R L + C . 
+ 
+ W S q l c m d :   E r r o r :   ' - '   o r   ' / '   d o e s   n o t   h a v e   a n   a s s o c i a t e d   a r g u m e n t . 
+ 
+ E n t e r   ' - ? '   f o r   h e l p . 
+ 
+ G S q l c m d :   E r r o r :   C a n n o t   o b t a i n   e x c l u s i v e   a c c e s s   f o r   t h e   f i l e   -   ' % 1 ! s ! ' . 
+ 
+                   2 H R e s u l t   0 x % 1 ! X ! ,   L e v e l   % 2 ! d ! ,   S t a t e   % 3 ! d ! 
+ 
+ % 4 ! s ! 
+ 
+                     L S q l c m d :   E r r o r :   A t   l e a s t   o n e   i n p u t   f i l e   i s   t h e   s a m e   a s   o u t p u t   f i l e   ' % 1 ! s ! ' . 
+ 
+  S q l c m d :   E r r o r :   % 1 ! s !   :   % 2 ! s ! . 
+ 
+ b S q l c m d :   E r r o r :   T h e   s c r i p t i n g   v a r i a b l e :   ' % 1 ! s ! '   i s   r e a d o n l y   a n d   c a n n o t   b e   s e t   w i t h   t h e   - v   o p t i o n . 
+ 
+ $ G O   c o u n t   s h o u l d   b e   g r e a t e r   t h a n   0 . 
+ 
+ A S q l c m d :   ' % 1 ! s ! ' :   A r g u m e n t   t o o   l o n g   ( m a x i m u m   i s   % 2 ! d !   c h a r a c t e r s ) . c S q l c m d :   ' % 1 ! s ! ' :   U n e x p e c t e d   a r g u m e n t .   A r g u m e n t   h a s   t o   b e   a   n u m b e r   g r e a t e r   t h a n   o r   e q u a l   t o   % 2 ! d ! . 
+ 
+  
+ 
+ ( % 1 ! d !   r o w s   a f f e c t e d ) 
+ 
+ \ S q l c m d :   ' % 1 ! s !   % 2 ! s ! ' :   h e a d e r   v a l u e   m u s t   b e   e i t h e r   - 1   o r   a   v a l u e   b e t w e e n   - 1   a n d   2 1 4 7 4 8 3 6 4 7 
+ 
+   8 C a n n o t   o b t a i n   e x c l u s i v e   a c c e s s   f o r   t h e   f i l e   -   ' % 1 ! s ! ' . 
+ 
+ * S q l c m d :   E r r o r   a t   l i n e   % 1 ! d !   o f   f i l e   % 2 ! s ! :  S q l c m d :   E r r o r :    ' % 1 ! s ! ' :   I n v a l i d   f i l e n a m e . 
+ 
+  S q l c m d :   E r r o r   a t   l i n e   % 1 ! d ! : < T h e   ' % 1 ! s ! '   v a r i a b l e   i s   n o t   r e a d a b l e   f o r   s e c u r i t y   r e a s o n s . 
+ 
+ b S q l c m d :   T h e   c o d e   p a g e   < % 1 ! d ! >   s p e c i f i e d   i n   o p t i o n   - f   i s   i n v a l i d   o r   n o t   i n s t a l l e d   o n   t h i s   s y s t e m . 
+ 
+                                                                               `    0?S	*?H??
+??D0?@1
+0	+ 0h
++?7?Z0X03
++?70% ? ?? < < < O b s o l e t e > > >0!0	+ öºÎÌSË
+??ý?âSÔ?ù[Ð??10?`0?L?
+.?ÜPÿ\?ËÀ0	+ 0p1+0)U
+"Copyright (c) 1997 Microsoft Corp.10U
+Microsoft Corporation1!0UMicrosoft Root Authority0
+070822223102Z
+120825070000Z0y1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Code Signing PCA0?"0
+	*?H??
+ ? 0?
+? ?y}Ö]?E9?4?1Úù%5IwÀû?ÇEqïÑFèÔ?ÃkLRbô?ÃMØIl/$>e?Î#?
+H?uÝE?ª?PÅ%+ò?ç
+#ÑA$úb?ÏE??J?Í?/"ÃJ-|oÙ;?99Ý?)ôf;-2ÿþ'H?µl??ûº?c?ù\??????ò???Ï8?P?'?NÝ0ö =ôÆù=???íl9?.4ö?.?
+}b?xf??s
+??òÄó ?O?cË,Ù2Eî?J?;PSÎfQyª??ÈV>??P?n?5Á{$?Rf=?NÌ+~3n?GÑ?ÐJ?n? ?À?ßS ??ú0??0U%0
++0??U??0???[Ðpïir?#Q~?M?ÿË?r0p1+0)U
+"Copyright (c) 1997 Microsoft Corp.10U
+Microsoft Corporation1!0UMicrosoft Root Authority? Á ?<<?Ñ>öcìß@0Uÿ0ÿ0UÌÎv p[?ñÚÄN?QD.?Dcð0
+U?0	+ ? {??~J&òÎ?Nt?X't*u??ý?L?x MéÊëÜiÅ?|óCÆÊ?ÌøSÌÂ??VoðcD?D î?È?Õ?
+?
+??Ú?)}ïí?s??Þ9?=?j?8mÒ??#ýßéÖi	???þá ?4ó?|ù.ë)??Bk(q?8?à
+É]hÍ??Akf?????4Êò|zõÒàBß{þáá?þößÕ
+?pÖ?ãO?8?|-Ô=Û4
+b7??j#?ö\c??Z?9?`?U?3õ;????_??,???Ë?Ú ??0? 
+*?RôAà^0ã?(i?Ápâó??Î?Brv0?z0?b?
+aÏ>     0
+	*?H??
+ 0y1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Code Signing PCA0
+091207224029Z
+110307224029Z0??1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1
+0
+U
+MOPR10UMicrosoft Corporation0?"0
+	*?H??
+ ? 0?
+? ?0?ûEr?Sk??O #À?Ô=?Y@8ós??&æ? SÙ?<Î???B??Ôü8ä?ùãìÓa??ÓÖuM\F?í^ðÒâi[sê??Í)D?dY/?]nÇ?9?eÄ???u?ê??&?&v?Ô89?ã?&Õù+éÒÉZT!ò????)þôI,æ?ø?}ÍÍ???
+qâÐþB5ÿ???Ý?E
+}ö?K?[ðvrw#}?5Ä]?PKGm?U??????TNØ?Öú?BÀ1?U
+?ÕSI0ëå??|^ÄzZ??7i?ë2$?ëùÔºàüÍê? ??ø0?õ0U%0
++0U8xsÈ2?_??U??ºÆ??t?0Uÿ?0U#0?ÌÎv p[?ñÚÄN?QD.?Dcð0DU=0;09?7?5?3http://crl.microsoft.com/pki/crl/products/CSPCA.crl0H+<0:08+0?,http://www.microsoft.com/pki/certs/CSPCA.crt0
+	*?H??
+ ? (??
+ñþoBvØC??ÆBú$e4?u?q0????úräþÍ7ç:p?Q ºq?ÉôÕä?è(psÕíáÂ{îñV4Z??ë?rêNìÝ
+?{DOauýn?ÝÎ+Z
+9?`ýÚÿª?Øú????ÁjT;1_ä,nËñM*òv{??Æ?Ö?*í?ÌÀä?èÏè?rT?n*È???Áo?Ûb?ÁKk?Éí=?ã?/?zw9gj {??Þc?I&BÞ?"Á?
+Ð?_Üs2r6ÿÈ)Å$ROfHÉ?Å&9iPN?ìÂl.rñ!Úm$H??@|?Ìt8JO0??0???j
+?OÀ %?ÛEXzg?0
+	*?H??
+ 0p1+0)U
+"Copyright (c) 1997 Microsoft Corp.10U
+Microsoft Corporation1!0UMicrosoft Root Authority0
+060916010447Z
+190915070000Z0y1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Timestamping PCA0?"0
+	*?H??
+ ? 0?
+? Ü7nû?ÈBJqÈÎH>SÀú?º,2?ORÈ?í>3ÙI1?(??dàP?ºÂKÑøïu??Ç?Õ?ipfx'fè??ï??Íîªý?
+Y")/Ï@ÙVvµmdmJTÛÝñÞ???Ç?ßL7?õÀ?VhGÍÙÀv\/}?%?V[jcÿ?|<îÕ%M9wt]Â\Ø?7,uÉê9	|vþ?lnzàì>???q_*Ob`2?Ò?N+"\hE?Þ/?P?ùµ?lî%?øË??ô?vs6Æ?z?Ì`ì??3?ø?[?A?X??n?,HÌo?Càjè&?k ??(0?$0U%0
++0??U??0???[Ðpïir?#Q~?M?ÿË?r0p1+0)U
+"Copyright (c) 1997 Microsoft Corp.10U
+Microsoft Corporation1!0UMicrosoft Root Authority? Á ?<<?Ñ>öcìß@0	+?7 0UoèN???4?K????ê?;ACÆÐ0	+?7
+ S u b C A0
+U?0Uÿ0ÿ0
+	*?H??
+ ? ?M1Â|P???a?pE?ïsT??	-ÿ?QS?í9???V
+Þ??;Ñû??É??Q!oi~k?"Fíl?m|"?FÓ?ó???6Áë~ép]E??ÒÌÎÝ?Àá?*Í|ìÉ?2Õ??ËcÄ6Ñ!?vÞ;??s?!?Ø??T?ô?ÂeJ?(&?`?;ÇexH?Ï??:O?bXÞ0éé9ã?òÚ9?ù!?d?c?ò?C/{F?ºÿÙeùJÞÚt??nÌ?Ü(a|Hñ?!8??Å?2?å@ÆS=???Þèf7?ô"??Ì?wTQ:ÖrD?#ö0?ª0???
+a?0     0
+	*?H??
+ 0y1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Timestamping PCA0
+080725190115Z
+130725191115Z0??1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1
+0
+U
+MOPR1'0%U
+nCipher DSE ESN:85D3-305C-5BCF1%0#UMicrosoft Time-Stamp Service0?"0
+	*?H??
+ ? 0?
+? ð-??À?g%?&b?KÎ0ºÀ8ü?e4Ä6?$höÀ?ô?ñ{b,FÙK?Q4?ÓlíZ;???G=.5kEæÂ<?f?iëJí',î<w[?Ôp?KW?Ð?-ø?æê)?çÏ?b?rTÂ;ÆÏ??á?Xlå??ÃÂu7?ô?á?è(Øñò?ñ??Ö????û=ú?á?2È?dóæÿ&qS?ò?'vI?q?ï?2xÆ?lO"e?bMF/ÿ#??ì?p?ËÚØ2Å+?@??Õ,?l?Ë2}?Æ~?/2üf??EUø?ú-g?g)??ÒZ?# ??ø0?õ0Uè?ö?ï?ñæiãYhN???zÝ?.0U#0?oèN???4?K????ê?;ACÆÐ0DU=0;09?7?5?3http://crl.microsoft.com/pki/crl/products/tspca.crl0H+<0:08+0?,http://www.microsoft.com/pki/certs/tspca.crt0U%0
++0UÿÀ0
+	*?H??
+ ? 
+?w_?<??5?Û?Vòï??Ç?/?Í?qÕ?|wÝë??|ãù?ò
+EH??i,ò>gbTòî'?9ìÎÙ?N??`G#{'@??
+1?Ø5?? Ó?ªxaÅµ?A?>6ÜX?'?:Ú?]??LÁ?<?òb?øfíÕó(?2ÛÊ1	?û"hFLúÓs"ç)?" ûV????º4ù(?Jb??õ?Gé
+??X;?k	i?ÀH|U??_ 8C?Ì?Ø/?Os	=ýº^ôÇì7Âda?MÔ=pÌ[??ÁÔ?1?dÖ?Òz?*[FS	<Íù?Y Ì?Sa1??0??0??0y1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Code Signing PCA
+aÏ>     0	+ ???0	*?H??
+	1
++?70
++?7
+10
++?70#	*?H??
+	1??ÁkSed5???PÇÈ/Ëe0X
++?71J0H?&?$ S Q L   S e r v e r   2 0 0 8   R 2??http://www.microsoft.com/sql0
+	*?H??
+ ? i?N????nh?ëêÝ?Æµª?zJm rHåaý?ÄÂ?ûý5Q?wÏß;[/??ÂÿoÚå?VÓàR"ÌÙ;å?äJ???D?miÕ?wnõ?{#4ID!8ØµºÚ<ðÏ<???Îïc?mo@??8kÛ?q?äÞ&jÙîIÞà:Ôä+ð?!?&º??ÉªáWvZã]øéÄm~mÿkmÃ?1á Ï?]îGùAæ2# JY;ùp=7Û?gçÙ?ê?úøî/:Ê3ÜH##ß??:??2â7MþOÜüë
+???çîL?D\?!1?<]:üJ?àÅÂº??ékvÑ2?ìÌ??0?	*?H??
+	1?0?0??0y1
+0	UUS10U
+Washington10URedmond10U
+Microsoft Corporation1#0!UMicrosoft Timestamping PCA
+a?0     0+?]0	*?H??
+	1
+	*?H??
+0	*?H??
+	1
+100403173359Z0#	*?H??
+	1?ÙI??$?uj?û?Ò?þ??"0
+	*?H??
+ ? *?*Õ?[B??l(?I,?i?Ú??'ùðÙNñ???É?Úh9?áø`?=O_]??'&7kþk?t0???f?º? ?rïË??Ü4õ?ÈRÐ]]Ù`?wK?öú
+BÆ??ëkgkNú??îmÒ??Ô??+öÓ?Â?D???SùPÍáµõ!???ª??6<Ä
+}#??ÇLõ??'í(C?n oPÎ?èÒÀ.ÃM
+??ï?=??ª?@ó
+??pM?[å?Å?Ö]?=  gýÀ??[??P??øì?ÎåþÚ>	ò};å1?féÌz=amn?ì?Ï?ý? 
